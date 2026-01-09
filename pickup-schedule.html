@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Pickup - FoodShare</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="dashboard.html">FoodShare</a>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="pickup-schedule.html" class="active">Pickup</a>
+                <a href="donation_form.html">Food & Donate</a>               
+                <a href="my-donations.html">My Donations</a>
+                <a href="chat_donner.html">Chat </a>
+                <a href="#">Settings</a>
+            </nav>
+
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Top Navbar -->
+            <header class="topbar">
+                <div class="search">
+                    <!-- <input type="text" placeholder="Search"> -->
+                </div>
+                <div class="profile">
+                    <div class="profile-info">
+                        <span class="notification">🔔</span>
+                        <div class="user">
+                            <span class="username">Tanveer</span>
+                            <span class="role">Donor</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Header -->
+            <section class="page-header">
+                <h2>Schedule Pickup</h2>
+            </section>
+
+            <!-- Pickup Schedule Form -->
+            <section class="pickup-schedule">
+                <div class="form-card">
+                    <h3>Schedule a Pickup</h3>
+                    <form>
+                        <!-- Select Food Item -->
+                        <div class="form-group">
+                            <label for="food-item">Food Item Name</label>
+                            <input type="text" id="food-item" placeholder="e.g., Rice, Canned Beans" required>
+                        </div>
+
+                        <!-- Pickup Date -->
+                        <div class="form-group">
+                            <label for="pickup-date">Pickup Date</label>
+                            <input type="date" id="pickup-date" required>
+                        </div>
+
+                        <!-- Pickup Time -->
+                        <div class="form-group">
+                            <label for="pickup-time">Pickup Time</label>
+                            <input type="time" id="pickup-time" required>
+                        </div>
+
+                        <!-- Pickup Address -->
+                        <div class="form-group">
+                            <label for="pickup-address">Pickup Address</label>
+                            <textarea id="pickup-address" placeholder="Enter pickup address"></textarea>
+                        </div>
+
+                        <!-- Optional Notes -->
+                        <div class="form-group">
+                            <label for="notes">Notes (Optional)</label>
+                            <textarea id="notes" placeholder="Any additional notes"></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Schedule Pickup</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

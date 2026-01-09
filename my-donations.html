@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Donation History</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+                <a href="dashboard.html">FoodShare</a>
+            </div>
+
+      <div class="menu">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="pickup-schedule.html">Pickup</a>
+        <a href="donation_form.html">Food & Donate</a>
+        <a href="my-donations.html" class="active">My Donations</a>
+        <a href="chat_donner.html">Chat </a>
+        <a href="#">Settings</a>
+      </div>
+
+      <a href="#" class="logout">Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="search">
+          <input type="text" placeholder="Search by ID or Food Name...">
+        </div>
+
+        <div class="profile">
+          <div class="profile-info">
+            <span class="notification">🔔</span>
+            <div class="user">
+              <span class="username">Tanveer</span>
+              <span class="role">Donor</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h2>Donation History</h2>
+        <a href="#" class="export-btn" onclick="return false;">⬇ Export Report</a>
+
+      </div>
+      <div class="print-info">
+        <h3>Donation History Report</h3>
+        <p><strong>Name:</strong> Tanveer</p>
+        <p><strong>Role:</strong> Donor</p>
+        <p><strong>Date:</strong> Jan 10, 2026</p>
+      </div>
+
+
+      <!-- Donation Table -->
+      <section class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Food Item</th>
+              <th>Quantity</th>
+              <th>Status</th>
+              <th>Expiry Date</th>
+              <th>Volunteer</th>
+              <th>Pickup Date& Time</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>#D-1029</td>
+              <td>Canned Beans & Soup</td>
+              <td>40 cans</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>Nov 30, 2025</td>
+              <td>--</td>
+              <td> --</td>
+              <td>👁 ⋮</td>
+            </tr>
+
+            <tr class="highlight">
+              <td>#D-1028</td>
+              <td>Fresh Bakery Surplus</td>
+              <td>12 kg</td>
+              <td><span class="status approved">Approved</span></td>
+              <td>Nov 26, 2025</td>
+              <td>Al Amin</td>
+              <td>Nov 16, 2025, 3:20 PM</td>
+              <td>👁 ⋮</td>
+            </tr>
+
+            <tr>
+              <td>#D-1027</td>
+              <td>Rice Bags </td>
+              <td>5 Kg</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td>Nov 25, 2025</td>
+              <td>Tanvirul Islam</td>
+              <td>Nov 15, 2025, 2:00 PM</td>
+              <td>👁 ⋮</td>
+            </tr>
+
+            <tr>
+              <td>#D-1026</td>
+              <td>Mixed Vegetables</td>
+              <td>8 kg</td>
+              <td><span class="status rejected">Rejected</span></td>
+              <td>Nov 14, 2025</td>
+              <td>--</td>
+              <td>--</td>
+              <td>👁 ⋮</td>
+            </tr>
+
+            <tr>
+              <td>#D-1025</td>
+              <td>Milk Cartons</td>
+              <td>30 liters</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td>Dec 13, 2025</td>
+              <td>Shakib Ahmed</td>
+              <td>Nov 23, 2025, 10:00 AM</td>
+              <td>👁 ⋮</td>
+            </tr>
+
+            <tr>
+              <td>#D-1024</td>
+              <td>Frozen Meat</td>
+              <td>15 kg</td>
+              <td><span class="status progress">In Progress</span></td>
+              <td>Nov 22, 2025</td>
+              <td>Minar Rahman</td>
+              <td>Nov 22, 2025, 11:00 AM</td>
+              <td>👁 ⋮</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Footer -->
+        <div class="table-footer">
+          <span>Showing 1 to 6 of 24 results</span>
+          <div class="pagination">
+            <button>‹</button>
+            <button>›</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

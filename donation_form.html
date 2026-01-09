@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Food Items - FoodShare</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="dashboard.html">FoodShare</a>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="pickup-schedule.html">Pickup</a>
+                <a href="donation_form.html" class="active">Food & Donate</a>               
+                <a href="my-donations.html">My Donations</a>
+                <a href="chat_donner.html">Chat </a>
+                <a href="#">Settings</a>
+            </nav>
+
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Top Navbar -->
+            <header class="topbar">
+                <div class="search">
+                    <!-- <input type="text" placeholder="Search"> -->
+                </div>
+                <div class="profile">
+                    <div class="profile-info">
+                        <span class="notification">🔔</span>
+                        <div class="user">
+                            <span class="username">Tanveer</span>
+                            <span class="role">Donor</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Header -->
+            <section class="page-header">
+                <h2>Offer Food Items</h2>
+
+            </section>
+
+            <!-- Offer Food Form -->
+            <section class="offer-food">
+                <div class="form-card">
+                    <h3>Add New Food Item</h3>
+                    <form>
+                        <!-- Food Name -->
+                        <div class="form-group">
+                            <label for="food-name">Food Item Name</label>
+                            <input type="text" id="food-name" placeholder="e.g., Rice, Canned Beans" required>
+                        </div>
+
+                        <!-- Quantity -->
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" id="quantity" placeholder="e.g., 20 kg, 40 cans" required>
+                        </div>
+
+                        <!-- Expiry Date -->
+                        <div class="form-group">
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="date" id="expiry-date" required>
+                        </div>
+
+                        <!-- Pickup Address -->
+                        <div class="form-group">
+                            <label for="pickup">Pickup Address</label>
+                            <textarea id="pickup" placeholder="Enter pickup address"></textarea>
+                        </div>
+                        <!-- Optional Description -->
+                        <div class="form-group">
+                            <label for="description">Description (Optional)</label>
+                            <textarea id="description" placeholder="Add any notes about the food item"></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Offer Food</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

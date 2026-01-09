@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard</title>
+    <!-- Link to external CSS (can add styles later) -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="dashboard.html">FoodShare</a>
+            </div>
+
+
+            <nav class="menu">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="pickup-schedule.html">Pickup</a>
+                <a href="donation_form.html">Food & Donate</a>
+                <a href="my-donations.html">My Donations</a>
+                <a href="chat_donner.html">Chat </a>
+                <a href="#">Settings</a>
+            </nav>
+
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Top Navbar -->
+            <header class="topbar">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="profile">
+                    <div class="profile-info">
+                        <span class="notification">🔔</span>
+                        <div class="user">
+                            <span class="username">Tanveer</span>
+                            <span class="role">Donor</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Header -->
+            <section class="page-header">
+                <h2>Donor Dashboard</h2>
+                <a href="donation_form.html" class="export-btn">🎁 Offer Food</a>
+            </section>
+
+            <!-- Dashboard Summary -->
+            <section class="dashboard-summary">
+
+                <!-- Row 1: Donation Status Counts -->
+                <div class="cards row-1">
+                    <div class="card ">
+                        <h3>Total Donations</h3>
+                        <h2>228</h2>
+                    </div>
+                    <div class="card">
+                        <h3>Pending pickups</h3>
+                        <h2>12</h2>
+                    </div>
+                    <div class="card">
+                        <h3>In progress</h3>
+                        <h2>4</h2>
+                    </div>
+                    <div class="card">
+                        <h3>Completed Donations</h3>
+                        <h2>86</h2>
+                    </div>
+                </div>
+
+                <!-- Row 2: Totals (Food Donated, Meals Served, In Progress) -->
+                <div class="cards row-2">
+                    <div class="card green">
+                        <h3>Total Food Donated</h3>
+                        <h2>1,245 kg</h2>
+                    </div>
+                    <div class="card yellow">
+                        <h3>Meals Served</h3>
+                        <h2>3,736</h2>
+                    </div>
+                    <div class="card red">
+                        <h3>Expired/Waste</h3>
+                        <h2>4</h2>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Quick Action Cards -->
+            <!-- <section class="quick-actions">
+                <div class="action-card">
+                    <h4>Offer Food</h4>
+                    <p>Add food items with expiry date</p>
+                    <a href="#">Offer Now</a>
+                </div>
+
+                <div class="action-card">
+                    <h4>Schedule Pickup</h4>
+                    <p>Select pickup time</p>
+                    <a href="#">Schedule</a>
+                </div>
+
+                <div class="action-card">
+                    <h4>Track Donations</h4>
+                    <p>View donation status</p>
+                    <a href="#">View</a>
+                </div>
+            </section> -->
+
+            <!-- Weekly Donation Chart -->
+
+
+
+
+
+            <!-- Recent Donations Table -->
+            <section class="table-box">
+                <h3>Recent Donations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Expiry Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20001</td>
+                            <td>Rice & Lentils</td>
+                            <td>20 kg</td>
+                            <td>20 Mar 2026</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <td>20002</td>
+                            <td>Canned Food</td>
+                            <td>15 kg</td>
+                            <td>25 Mar 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>20003</td>
+                            <td>Vegetables</td>
+                            <td>30 kg</td>
+                            <td>18 Mar 2026</td>
+                            <td><span class="status progress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
