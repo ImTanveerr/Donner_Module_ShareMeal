@@ -2,10 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Chat - FoodShare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <a href="dashboard.html">FoodShare</a>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="pickup-schedule.html">Pickup</a>
+            <a href="donation_form.html">Food & Donate</a>
+            <a href="my-donations.html">My Donations</a>
+            <a href="chat_donner.html" class="active">Chat</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <a href="#" class="logout">Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+            <div></div>
+            <div class="profile">
+                <div class="profile-info">
+                    <a href="notifications.html" class="notification-link">
+                        <span class="notification">🔔</span>
+                    </a>
+                    <div class="user">
+                        <span class="username">Tanveer</span>
+                        <span class="role">Donor</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <section class="chat-container">
+
+            <!-- Chat List -->
+            <aside class="chat-list">
+                <h3>Messages</h3>
+
+                <div class="chat-user active">
+                    <p class="name">Al Amin</p>
+                    <p class="last-msg">Thanks for the donation!</p>
+                </div>
+
+                <div class="chat-user">
+                    <p class="name">Food Bank BD</p>
+                    <p class="last-msg">Can you confirm pickup time?</p>
+                </div>
+
+                <div class="chat-user">
+                    <p class="name">Volunteer Team</p>
+                    <p class="last-msg">We are on the way.</p>
+                </div>
+            </aside>
+
+            <!-- Chat Box -->
+            <section class="chat-box">
+
+                <!-- Chat Header -->
+                <div class="chat-header">
+                    <div class="chat-header-left">
+                        <h3>Al Amin</h3>
+                        <span class="status online">Online</span>
+                    </div>
+                    <div class="chat-header-right">
+                        <i class="fas fa-phone" title="Voice Call"></i>
+                        <i class="fas fa-video" title="Video Call"></i>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="chat-messages">
+                    <div class="message received">
+                        <p>Hello! We received your food donation request.</p>
+                        <span class="time">3:10 PM</span>
+                    </div>
+
+                    <div class="message sent">
+                        <p>Great! When will you pick it up?</p>
+                        <span class="time">3:12 PM</span>
+                    </div>
+
+                    <div class="message received">
+                        <p>Within 30 minutes.</p>
+                        <span class="time">3:13 PM</span>
+                    </div>
+                </div>
+
+                <!-- Input -->
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+
+            </section>
+
+        </section>
+    </main>
+</div>
 </body>
 </html>

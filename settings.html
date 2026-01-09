@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings - FoodShare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="dashboard.html">FoodShare</a>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="pickup-schedule.html">Pickup</a>
+                <a href="donation_form.html">Food & Donate</a>
+                <a href="my-donations.html">My Donations</a>
+                <a href="chat.html">Chat</a>
+                <a href="settings.html" class="active">Settings</a>
+            </nav>
+
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Top Navbar -->
+            <header class="topbar">
+                <div class="profile">
+                    <div class="profile-info">
+                        <a href="notifications.html" class="notification-link">
+                            <span class="notification">🔔</span>
+                        </a>
+
+                        <div class="user">
+                            <span class="username">Tanveer</span>
+                            <span class="role">Donor</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Settings Content -->
+            <section class="settings-page">
+                <h2>Settings</h2>
+
+                <div class="form-card">
+                    <h3>Profile Information</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" value="Tanveer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" value="tanveer@example.com">
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h3>Change Password</h3>
+                    <div class="form-group">
+                        <label for="current-password">Current Password</label>
+                        <input type="password" id="current-password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm New Password</label>
+                        <input type="password" id="confirm-password">
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h3>Notification Preferences</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" checked> Email notifications
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox"> SMS notifications
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox"> Push notifications
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-card" style="text-align:center;">
+                    <button class="submit-btn">Save Changes</button>
+                </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
